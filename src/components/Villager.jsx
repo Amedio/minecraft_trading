@@ -2,9 +2,9 @@ import { React } from 'react';
 
 import './villager.css';
 
-const Villager = (...props) => {
+const Villager = ({ type, ...props }) => {
     return <div>
-        <img src={process.env.PUBLIC_URL + '/images/villager/plains/base.png'} alt='Villager base plains' />
+        <img class='avatar' src={`${process.env.PUBLIC_URL}/images/villager/plains/${type}.png`} alt='Villager base plains' />
     </div>;
 }
 
